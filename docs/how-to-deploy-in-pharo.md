@@ -25,9 +25,9 @@ MyApplicationEntryPoint class>>#initialize
                       userCategory
 ```
 
-```st
-### StartUp and ShutDown
 
+### StartUp and ShutDown
+```st
 MyApplicationEntryPoint class>>startUp: arg1
     MyApplicationManager instance startAlgorithm
 
