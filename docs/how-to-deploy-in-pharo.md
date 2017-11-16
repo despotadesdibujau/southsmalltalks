@@ -86,8 +86,9 @@ With SmalltalkHub works.
 
 ```
 
-```sh
+
 If you try do the same thing with PharoConsole in Windows doesn't work.
+```sh
 For Windows you can load your application using Smalltalks's scripts
  PharoConsole.exe Pharo-minimal.image loadMyApplication.st
 ```
