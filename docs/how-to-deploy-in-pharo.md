@@ -56,6 +56,12 @@ curl get.pharo.org/61-minimal | bash
  ### Order your ideas
  # Your aplication environment
 
+- Create a development directory
+- Create a exe-factory directory
+- Create the deploy directory
+- Save the minimal image in the exe-factory directory and in the deploy directory
+- Save the 32 bits VM exe-factory directory and in the deploy directory
+- Proof that all works
 .
 
  * development
@@ -71,12 +77,7 @@ curl get.pharo.org/61-minimal | bash
  * deployment
    * myApplication.image
    * vm
-- Create a development directory
-- Create a exe-factory directory
-- Create the deploy directory
-- Save the minimal image
-- Save the 32 bits VM
-- Proof that all works
+
 
 ### Load your application in the minimal image
 The next script doesn't work with GitHub and Filetree repositories. 
