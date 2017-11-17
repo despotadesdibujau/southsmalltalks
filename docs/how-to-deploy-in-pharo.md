@@ -113,7 +113,7 @@ Rename the image and try to load your application.
   - [Metacello-GitBasedRepository](https://gist.github.com/despotadesdibujau/172b75e19970b3ceb5ba2337e53c3088)
   - [Metacello-GitHub](https://gist.github.com/despotadesdibujau/053dcd8ff12bf84977aaf862b70fac76)
   
-  I recomend to extract them from the full image.
+ [With this script](https://gist.github.com/despotadesdibujau/804115f5be69554a047ad2e3ecd0b201) you can prepare the minimal image to load your application from github and filetree (proven)
   
  ### Workaround 
  -Load your application using MCCacheRepository
