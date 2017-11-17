@@ -12,9 +12,9 @@ Create a deployable image just  loading the application on the minimal image and
 - [x] Use the Dependency Analyser for detect and add the dependencies to BaselineOf or ConfigurationOf
 - [x] Create a BaselineOf or ConfigurationOf
 - [x] Load your application on the minimal image
-- [] Disable code loading
-- [] Remove the changes file
-- [] Remove the sources file
+- [ ] Disable code loading
+- [ ] Remove the changes file
+- [ ] Remove the sources file
 ### Registering the Entry Point Object
 
 ```st
