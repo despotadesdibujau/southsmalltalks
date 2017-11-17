@@ -115,13 +115,7 @@ Rename the image and try to load your application.
   
  [With this script](https://gist.github.com/despotadesdibujau/804115f5be69554a047ad2e3ecd0b201) you can prepare the minimal image to load your application from github and filetree (proven)
   
- ### Workaround 
- -Load your application using MCCacheRepository
- ```st
- Gofer it repository: MCCacheRepository default ;
-	 package: #'MyApplication-package';
-	 load.
-SmalltalkImage current changeImagePathTo:'myApplication.image';
-		snapshot: true andQuit:true
-```
- -Push your code on [smalltalkHub](http://smalltalkhub.com/) and load from there 
+ Next steps:
+ - Disable the reads to sources and changes
+ - Unload the posibilities to change the application in production
+ 
