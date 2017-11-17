@@ -109,9 +109,9 @@ Rename the image and try to load your application.
 ### Dependencies of filetree in order of dependency (from botton to top)
 
   - [STON-Core](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/STON/STON.html)
-  - [MonticelloFileTree-Core](http://smalltalkhub.com/mc/Pharo/Pharo60/MonticelloFileTree-Core-TheIntegrator.152.mcz)
-  - [Metacello-GitBasedRepository](http://smalltalkhub.com/mc/Pharo/Pharo60/Metacello-GitBasedRepository-TheIntegrator.24.mcz)
-  - [Metacello-GitHub](http://smalltalkhub.com/mc/Pharo/Pharo60/Metacello-GitHub-TheIntegrator.58.mcz)
+  - [MonticelloFileTree-Core](https://gist.github.com/despotadesdibujau/c4e60ba35430f650ae1d3a9d52dc8788)
+  - [Metacello-GitBasedRepository](https://gist.github.com/despotadesdibujau/172b75e19970b3ceb5ba2337e53c3088)
+  - [Metacello-GitHub](https://gist.github.com/despotadesdibujau/053dcd8ff12bf84977aaf862b70fac76)
   
   I recomend to extract them from the full image.
   
