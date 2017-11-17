@@ -116,8 +116,9 @@ Rename the image and try to load your application.
   
  [With this script](https://gist.github.com/despotadesdibujau/804115f5be69554a047ad2e3ecd0b201) you can prepare the minimal image to load your application from github and filetree (proven)
  ### Example for Windows
+ [script-to-prepare-minimal-image.st](https://gist.github.com/despotadesdibujau/804115f5be69554a047ad2e3ecd0b201)
  ```bash
- PharoConsole.exe Pharo-minimal.image [script-to-prepare-minimal-image.st](https://gist.github.com/despotadesdibujau/804115f5be69554a047ad2e3ecd0b201)
+ PharoConsole.exe Pharo-minimal.image script-to-prepare-minimal-image.st
 PharoConsole.exe minimal-ready.image loadMyApplication.st
 PharoConsole.exe myApplication.image
  ```
