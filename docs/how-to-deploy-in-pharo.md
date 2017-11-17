@@ -104,6 +104,15 @@ load.
 SmalltalkImage current   saveImageInFileNamed:'myApp.image'.
 SmalltalkImage current snapshot: true andQuit: true
 ```
+
+```st
+Metacello new
+baseline:'ToDoApplication';
+repository: 'github://despotadesdibujau/seaside-todo-application:master';
+load.
+SmalltalkImage current   saveImageInFileNamed:'myApp.image'.
+SmalltalkImage current snapshot: true andQuit: true
+```
 This should work but some dependencies of filetree aren't loaded in the minimal image, so you need load these dependencies.
 When you was loaded these dependencies execute Smalltalk recompile and save the image.
 Rename the image and try to load your application.
