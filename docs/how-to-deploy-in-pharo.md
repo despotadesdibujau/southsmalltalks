@@ -37,7 +37,7 @@ MyApplicationEntryPoint class>>shutDown: arg1
     MyApplicationManager instance stopAlgorithm
  ```
  
-### If We get the minimal image and use the VM that we was used to development process
+### If We get the minimal image and use the VM that we was used to development process wont work
 (linux)
 ```sh
 curl get.pharo.org/61-minimal
@@ -89,7 +89,7 @@ With SmalltalkHub works.
 ```
 
 
-If you try do the same thing with PharoConsole in Windows doesn't work.
+If you try do the same thing with PharoConsole in Windows but doesn't work.
 ```sh
 For Windows you can load your application using Smalltalks's scripts
  PharoConsole.exe Pharo-minimal.image loadMyApplication.st
