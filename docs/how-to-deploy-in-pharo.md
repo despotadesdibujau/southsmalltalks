@@ -8,12 +8,13 @@ Create a deployable image just  loading the application on the minimal image and
 - ConfigurationCommandLineHandler 
 - Smalltalk scripts
 ### The minimal image process
-- Create an entry point object
-- Use the Dependency Analyser for detect and add the dependencies to BaselineOf or ConfigurationOf
-- Create a BaselineOf or ConfigurationOf
-- Disable code loading
-- Remove the changes file
-- Remove the sources file
+- [x] Create an entry point object
+- [x] Use the Dependency Analyser for detect and add the dependencies to BaselineOf or ConfigurationOf
+- [x] Create a BaselineOf or ConfigurationOf
+- [x] Load your application on the minimal image
+- [] Disable code loading
+- [] Remove the changes file
+- [] Remove the sources file
 ### Registering the Entry Point Object
 
 ```st
@@ -114,7 +115,12 @@ Rename the image and try to load your application.
   - [Metacello-GitHub](https://gist.github.com/despotadesdibujau/053dcd8ff12bf84977aaf862b70fac76)
   
  [With this script](https://gist.github.com/despotadesdibujau/804115f5be69554a047ad2e3ecd0b201) you can prepare the minimal image to load your application from github and filetree (proven)
-  
+ ### Example for Windows
+ ```bash
+ PharoConsole.exe Pharo-minimal.image [script-to-prepare-minimal-image.st](https://gist.github.com/despotadesdibujau/804115f5be69554a047ad2e3ecd0b201)
+PharoConsole.exe minimal-ready.image loadMyApplication.st
+PharoConsole.exe myApplication.image
+ ```
  Next steps:
  - Disable the reads to sources and changes
  - Unload the posibilities to change the application in production
