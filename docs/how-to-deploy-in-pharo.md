@@ -36,7 +36,7 @@ MyApplicationEntryPoint class>>shutDown: arg1
     MyApplicationManager instance stopAlgorithm
  ```
  
-### Get the minimal image and use the VM that we was used to development process
+### If We get the minimal image and use the VM that we was used to development process
 (linux)
 ```sh
 curl get.pharo.org/61-minimal
