@@ -13,8 +13,8 @@ Create a deployable image just  loading the application on the minimal image and
 - [x] Create a BaselineOf or ConfigurationOf
 - [x] Load your application on the minimal image
 - [ ] Disable code loading
-- [ ] Remove the changes file
-- [ ] Remove the sources file
+- [x] Remove the changes file
+- [x] Remove the sources file
 ### Registering the Entry Point Object
 
 ```st
@@ -131,7 +131,32 @@ Rename the image and try to load your application.
 PharoConsole.exe minimal-ready.image loadMyApplication.st
 PharoConsole.exe myApplication.image
  ```
- Next steps:
- - Disable the reads to sources and changes
+
+ ### Disable the reads to sources and changes
+ [Wiht this script you can disable the calls to changes and sources](https://gist.github.com/despotadesdibujau/5c26d74763005a7e6bcf67954de811ef)
+ 
+ 
+### Full example
+Firts of all:
+- create a directory for the application
+- go to directory just created and create a file called loadMetacello.st and paste this [code](https://gist.github.com/despotadesdibujau/804115f5be69554a047ad2e3ecd0b201)
+- create a file called loadApplication.st and paste this [code](https://gist.github.com/despotadesdibujau/27e07f8fee24007675d747da22da3aaa)
+- create a file called disableChangesAndSources.st and paste this [code](https://gist.github.com/despotadesdibujau/5c26d74763005a7e6bcf67954de811ef)
+- and then paste the below in a terminal
+ ```sh
+curl get.pharo.org/vm61 | bash \
+&& curl get.pharo.org/61-minimal | bash \
+&& ./pharo Pharo.image loadMetacello.st \
+&& ./pharo minimal-ready.image loadApplication.st \
+&& ./pharo todoApplication.image disableChangesAndSources.st \
+&& rm *.changes \
+&& rm pharo-vm/lib/pharo/5.0-201707201942/PharoV60.sources \
+&& ./pharo todoApplication.image welcome.st
+ ```
+In the browser go to http://localhost:8080/examples/todo
+If everithing is ok you should to see a todoApplication of Seaside's examples, if not send me an email despotadesdibujau@gmail.com
+
+
+ ### Next and last step:
  - Unload the posibilities to change the application in production
  
