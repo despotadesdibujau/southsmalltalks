@@ -136,7 +136,7 @@ PharoConsole.exe myApplication.image
  [Wiht this script you can disable the calls to changes and sources](https://gist.github.com/despotadesdibujau/5c26d74763005a7e6bcf67954de811ef)
  
  
-### Full example
+### Full example (proven in Ubuntu 14.04)
 Firts of all:
 - create a directory for the application
 - go to directory just created and create a file called loadMetacello.st and paste this [code](https://gist.github.com/despotadesdibujau/804115f5be69554a047ad2e3ecd0b201)
@@ -146,7 +146,7 @@ Firts of all:
 ```st
 2+2
 ```
-- and then paste the below in a terminal
+- and then paste the next lines in a terminal
  ```sh
 curl get.pharo.org/vm61 | bash \
 && curl get.pharo.org/61-minimal | bash \
