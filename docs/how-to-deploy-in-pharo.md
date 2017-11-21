@@ -123,6 +123,8 @@ Rename the image and try to load your application.
   - [Metacello-GitBasedRepository](https://gist.github.com/despotadesdibujau/172b75e19970b3ceb5ba2337e53c3088)
   - [Metacello-GitHub](https://gist.github.com/despotadesdibujau/053dcd8ff12bf84977aaf862b70fac76)
   
+ 
+  
  [With this script](https://gist.github.com/despotadesdibujau/804115f5be69554a047ad2e3ecd0b201) you can prepare the minimal image to load your application from github and filetree (proven)
  ### Example for Windows
  [script-to-prepare-minimal-image.st](https://gist.github.com/despotadesdibujau/804115f5be69554a047ad2e3ecd0b201)
@@ -131,6 +133,15 @@ Rename the image and try to load your application.
 PharoConsole.exe minimal-ready.image loadMyApplication.st
 PharoConsole.exe myApplication.image
  ```
+So far  _My idea was to prepare a minimal image with every tool for load
+ code:Monticello,Metacello suporting all types of repositories
+ (filetree,github,gitbucket, gitlab,...etc),...etc._
+ 
+ _But luckily Pavel Krivanek [said](http://forum.world.st/Deploying-using-the-latest-minimal-image-of-Pharo-6-1-td5029737.html)_ 
+
+_"In Pharo 7 most of them are already part of the the minimal (Metacello)
+image."_
+
 
  ### Disable the reads to sources and changes
  [Wiht this script you can disable the calls to changes and sources](https://gist.github.com/despotadesdibujau/5c26d74763005a7e6bcf67954de811ef)
